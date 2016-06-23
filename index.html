@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>FCC - Local Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div id="overlay" class="thermochromatic warm">
+
+	<header>
+		<div id="source" class="small text-right">
+			<small>Powered by <a href="http://openweathermap.org" target="_blank" class="thermochromatic">openweathermap</a></small>
+		</div>
+	</header>
+
+	<div id="container" class="">
+
+		<div id="panel">
+
+			<header>
+				<div class="flex-row flex-spread-apart">
+					<div id="location" class="">
+						<h3><i class="fa fa-map-marker" aria-hidden="true"></i><span>Town</span></h3>
+					</div>
+					<div id="temp-unit" class="" title="Toggle units">
+						<a href="#">
+							<span id="celcius" class="active">°C</span> / <span id="fahrenheit" class="">°F</span>
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<hr />
+
+			<main>
+				<div class="flex-column flex-center">
+
+					<div id="weather-icons">
+
+						<div class="icon sunny">
+							<div class="sun">
+								<div class="rays"></div>
+							</div>
+						</div>
+
+						<div class="icon few-clouds hidden">
+							<div class="cloud"></div>
+							<div class="cloud"></div>
+							<div class="sun">
+								<div class="rays"></div>
+							</div>
+						</div>
+
+						<div class="icon cloudy hidden">
+							<div class="cloud"></div>
+							<div class="cloud"></div>
+						</div>
+
+						<div class="icon rainy hidden">
+							<div class="cloud"></div>
+							<div class="cloud"></div>
+							<div class="rain"></div>
+						</div>
+
+						<div class="icon sun-shower hidden">
+							<div class="cloud"></div>
+							<div class="sun">
+								<div class="rays"></div>
+							</div>
+							<div class="rain"></div>
+						</div>
+
+						<div class="icon thunder-storm hidden">
+							<div class="cloud"></div>
+							<div class="cloud"></div>
+							<div class="lightning">
+								<div class="bolt"></div>
+								<div class="bolt"></div>
+							</div>
+						</div>
+
+						<div class="icon flurries hidden">
+							<div class="cloud"></div>
+							<div class="cloud"></div>
+							<div class="snow">
+								<div class="flake"></div>
+								<div class="flake"></div>
+							</div>
+						</div>
+
+						<div class="icon mist hidden">
+							<div class="cloud"></div>
+							<div class="cloud"></div>
+						</div>
+
+					</div>
+					<!--/weather-icons-->
+
+					<div id="description" class="text-center italic">
+						<p>The weather is ideal</p>
+					</div>
+
+				</div>
+				<!--/flex-column-->
+
+			</main>
+
+			<hr />
+
+			<footer>
+
+				<div class="flex-row flex-spread-apart">
+
+					<div id="temp">
+						<div id="temp-value" class=""><span>20</span>°</div>
+					</div>
+
+					<div id="details" class="">
+						<div id="wind"><i class="fa fa-flag" aria-hidden="true"></i><span>0.00 <small>m/s</small></span></div>
+						<div id="precipitation"><i class="fa fa-tint" aria-hidden="true"></i><span>0.00 <small>mm</small></span></div>
+					</div>
+
+				</div>
+
+			</footer>
+
+		</div>
+	</div>
+</div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
